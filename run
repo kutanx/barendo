@@ -195,10 +195,8 @@ github = 'github.com/Mark-Zuck'
 
 def banner():
 	os.system('clear')
-	logo = (f'# • Author : {author} •')
 	play = rich.markdown.Markdown(logo, style='green')
 	rich.console.Console().print(play)
-	print (' %s%s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
 	(M,til,K,til,H,til,M,til,K,til,H,til,M,P,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
 	print (' %s#%s IP   %s:%s %s %s- %s%s '%(U,O,M,O,IP,H,O,CN))
     
