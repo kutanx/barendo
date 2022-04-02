@@ -2327,6 +2327,47 @@ def brute(email_dev, san_dev_):
 			exit("%s• Keluar...."%(M))
 		except:
 			pass
+			
+# LISENSI
+def get_license(integer):
+    lis = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
+    gets = [random.choice(lis) for _ in range(integer)]
+    return "".join(gets).upper()
+
+class key:
+	
+	def __init__(self):
+		self=[]
+	
+	def konfirmasi(self):
+		os.system("clear")
+		banner()
+		print('\n')
+		print ('\x1b[1;95m•\x1b[1;96m Mohon tunggu ...');jeda(1)
+		digit = random.choice([20])
+		id = get_license(digit)
+		lpg = open('data/lisensi.txt', 'w')
+		lpg.write(id)
+		lpg.close()
+		print ("\n\n%s•%s Daftar list harga %s:"%(U,O,M));jeda(0.07)
+		print ("  %s-%s 20k 1 minggu"%(P,O));jeda(0.07)
+		print ("  %s-%s 60k 1 bulan"%(P,O));jeda(0.07)
+		jalan ('\n%s• %sLisensi%s : %s%s'%(U,O,M,H,id));jeda(1)
+		jalan ('%s• %sLisensi Belum Di konfirmasi'%(U,O))
+		suh=input("\n%s•%s ingin beli lisensi? y/t %s: %s"%(U,O,M,K))
+		if suh in['']:
+			exit()
+		elif suh in["y","Y"]:
+			jalan ("\n%s•%s menuju ke whatsap untuk membeli lisensi "%(U,O))
+			jalan ("%s•%s no whatsap saya %s: %s+6282371648186 "%(U,O,M,H))
+			os.system('am start https://wa.me/+6282371648186?text=Assalamualaikum+saya+ingin+beli+lisensi:+'+id+'>/dev/null');jeda(1)
+			exit()
+		elif suh in["t","T"]:
+			exit()
+		elif suh in["python2 bff-2.py"]:
+			menu()
+		else:
+			exit()
 
 if __name__=="__main__":
 	Masuk()
