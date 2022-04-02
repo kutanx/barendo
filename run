@@ -195,6 +195,12 @@ github = 'github.com/Mark-Zuck'
 
 def banner():
 	os.system('clear')
+	logo = (f'# • Author : {author} •')
+	play = rich.markdown.Markdown(logo, style='green')
+	rich.console.Console().print(play)
+	print (' %s%s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
+	(M,til,K,til,H,til,M,til,K,til,H,til,M,P,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
+	print (' %s#%s IP   %s:%s %s %s- %s%s '%(U,O,M,O,IP,H,O,CN))
     
 # CONVERT COOKIE DICT TO STRING
 def romz_xyz(cookie,venom={}):
@@ -206,7 +212,38 @@ def romz_xyz(cookie,venom={}):
 
 # MENU MASUK
 def Masuk():
-	
+	try:
+		os.system("git pull")
+		os.system('clear')
+		folder()
+		lis = open ("data/lisensi.txt","r").read()
+	except (KeyError,IOError):
+		os.system("clear")
+		print ("%s× Lisensi kadaluarsa"%(M));jeda(2)
+		os.system("rm -rf data/lisensi.txt")
+		key().konfirmasi()
+	if os.path.exists('data/lisensi.txt'):
+		try:
+			lis = open('data/lisensi.txt', 'r').read()
+			git = requests.get('https://github.com/warba29/lisensi/blob/main/id.txt').text.strip()
+			if lis in git:
+				os.system('clear')
+				banner()
+				print ('\n\n\x1b[1;95m•\x1b[1;96m Memeriksa lisensi...');jeda(1)
+				jalan('\n%s• Lisensi tersedia √'%(H));jeda(1)
+				os.system('clear')
+			else:
+				os.system('clear')
+				banner()
+				print ('\n\n\x1b[1;95m•\x1b[1;96m Memeriksa lisensi...');jeda(1)
+				jalan('\n%s• Lisensi tidak tersedia ×'%(M));jeda(1)
+				key().konfirmasi()
+		except IOError:
+			print
+			key().konfirmasi()
+	else:
+		print
+		key().konfirmasi()
 	try:
 		kueh = romz_xyz(open("data/cookies","r").read().strip())
 	except FileNotFoundError:
@@ -2291,8 +2328,6 @@ def brute(email_dev, san_dev_):
 		except:
 			pass
 			
-
-
 if __name__=="__main__":
 	Masuk()
 	
