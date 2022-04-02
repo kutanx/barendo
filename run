@@ -212,13 +212,6 @@ def romz_xyz(cookie,venom={}):
 
 # MENU MASUK
 def Masuk():
-	try:
-		os.system("git pull")
-		os.system('clear')
-		folder()
-	try:
-		kueh = romz_xyz(open("data/cookies","r").read().strip())
-	except FileNotFoundError:
 		os.system('clear')
 		banner()
 		print ('\n%s%s%s 01 %sLogin instagram (crack akun instagram) '%(U,til,K,O))
