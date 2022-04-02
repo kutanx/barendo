@@ -195,8 +195,6 @@ github = 'github.com/Mark-Zuck'
 
 def banner():
 	os.system('clear')
-	play = rich.markdown.Markdown(logo, style='green')
-	rich.console.Console().print(play)
     
 # CONVERT COOKIE DICT TO STRING
 def romz_xyz(cookie,venom={}):
