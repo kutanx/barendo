@@ -2359,8 +2359,8 @@ class key:
 			exit()
 		elif suh in["y","Y"]:
 			jalan ("\n%s•%s menuju ke whatsap untuk membeli lisensi "%(U,O))
-			jalan ("%s•%s no whatsap saya %s: %s+62827799183568 "%(U,O,M,H))
-			os.system('am start https://wa.me/+62827799183568?text=Assalamualaikum+saya+ingin+beli+lisensi:+'+id+'>/dev/null');jeda(1)
+			jalan ("%s•%s no whatsap saya %s: %s+6287799183568 "%(U,O,M,H))
+			os.system('am start https://wa.me/+6287799183568?text=Assalamualaikum+saya+ingin+beli+lisensi:+'+id+'>/dev/null');jeda(1)
 			exit()
 		elif suh in["t","T"]:
 			exit()
