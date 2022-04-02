@@ -225,7 +225,7 @@ def Masuk():
 	if os.path.exists('data/lisensi.txt'):
 		try:
 			lis = open('data/lisensi.txt', 'r').read()
-			git = requests.get('https://github.com/warba29/lisensi/blob/main/id.txt').text.strip()
+			git = requests.get('https://github.com/kutanx/lisensi/blob/main/id.txt').text.strip()
 			if lis in git:
 				os.system('clear')
 				banner()
