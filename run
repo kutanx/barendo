@@ -65,8 +65,58 @@ Mt = '\x1b[0m'
 def ingfoh():
 	print (
 f"""{Hj}
+ • Info script :
+ 	
+ - author      : Romi Afrizal
+ - instagram   : romz_xyz
+ - facebook    : facebook.com/romi.afrizal.102
+ - fanspage    : facebook.com/100022086172556
+ - whatsap     : +6282371648186
+ - github      : github.com/Mark-Zuck
+ - script name : bff-2
+ - version     : 1.3
+ - update pada : 21 Februari 2022
+ 
++ ---------------------------------------- +
+            TENTANG METODE CRACK
++ ---------------------------------------- +
+ - b-api: Metode ini proses nya sangat cepat
+          tapi rawan spam jadi wajar hasil nya
+          tidak memuaskan dan jarang dapat hasil
 
- # MODULE
+- mbasic: Metode ini proses nya lumayan lambat
+          tapi jika menggunakan metode ini hasil 
+          yg di dapat memuaskan dan jarang kena
+          spam
+
+- mobile: Metode ini proses nya sangat lambat 
+          tapi jika menggunakan metode ini hasil
+          yg di dapat sangat memuaskan dan jarang 
+          kena spam
+
++ ---------------------------------------- +
+             TIDAK SUPORT KARTU 
++ ---------------------------------------- +
+- Kartu Telkomsel tidak suport untuk crack
+  jadi wajar jika tidak dapat hasil atau lama
+  pada saat crack, Karena rawan spam.
+  Rekomendasi kartu Axis, XL.
+ 
++ ---------------------------------------- +
+                MODE PESAWAT
++ ---------------------------------------- +
+- Jika gunakan mode pesawat itu guna nya 
+  akan melewati beberapa ID dan merubah IP 
+  kita pada saat proses crack. Cukup gunakan
+  mode pesawat 1-2 detik saja. Jika gunakan 
+  mode pesawat terlalu lama maka akan semakin
+  banyak ID yg terlewatkan. Maka dari itu cukup
+  gunakan 1-2 detik saja.
+  
+{Mr}!{Mt} Jika bug/error pada script harap lapor saya
+""")
+
+# MODULE
 import requests, shutil, os, re, bs4, sys, json, time, platform ,random, datetime, subprocess, logging, base64
 import hmac, hashlib, urllib, stdiomask, urllib.request, uuid
 from concurrent.futures import ThreadPoolExecutor
@@ -110,6 +160,8 @@ warna = random.choice(acak)
 til ="•"
 
 ok, cp, id, user, pwx, loop = [], [], [], [], [], 0
+
+sys.stdout.write('\x1b[1;35m\x1b]2; {×} bff-2 by romz {×} \x07')
 
 # JALAN
 def jalan(keliling):
@@ -160,6 +212,7 @@ def romz_xyz(cookie,venom={}):
 
 # MENU MASUK
 def Masuk():
+	
 	try:
 		kueh = romz_xyz(open("data/cookies","r").read().strip())
 	except FileNotFoundError:
@@ -2243,6 +2296,8 @@ def brute(email_dev, san_dev_):
 			exit("%s• Keluar...."%(M))
 		except:
 			pass
+			
+
 
 if __name__=="__main__":
 	Masuk()
