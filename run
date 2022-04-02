@@ -1,8 +1,4 @@
 # coding=utf-8
-# coding by Romi Afrizal
-# Izin dlu lah bro kalau mau recode, gk ngotak njir _-
-# Note : jangan di ubah lagi! nanti error, script udah enak
-
 import os, sys, subprocess, platform
 try:
 	import rich
@@ -67,55 +63,6 @@ def ingfoh():
 f"""{Hj}
  • Info script :
  	
- - author      : Romi Afrizal
- - instagram   : romz_xyz
- - facebook    : facebook.com/romi.afrizal.102
- - fanspage    : facebook.com/100022086172556
- - whatsap     : +6282371648186
- - github      : github.com/Mark-Zuck
- - script name : bff-2
- - version     : 1.3
- - update pada : 21 Februari 2022
- 
-+ ---------------------------------------- +
-            TENTANG METODE CRACK
-+ ---------------------------------------- +
- - b-api: Metode ini proses nya sangat cepat
-          tapi rawan spam jadi wajar hasil nya
-          tidak memuaskan dan jarang dapat hasil
-
-- mbasic: Metode ini proses nya lumayan lambat
-          tapi jika menggunakan metode ini hasil 
-          yg di dapat memuaskan dan jarang kena
-          spam
-
-- mobile: Metode ini proses nya sangat lambat 
-          tapi jika menggunakan metode ini hasil
-          yg di dapat sangat memuaskan dan jarang 
-          kena spam
-
-+ ---------------------------------------- +
-             TIDAK SUPORT KARTU 
-+ ---------------------------------------- +
-- Kartu Telkomsel tidak suport untuk crack
-  jadi wajar jika tidak dapat hasil atau lama
-  pada saat crack, Karena rawan spam.
-  Rekomendasi kartu Axis, XL.
- 
-+ ---------------------------------------- +
-                MODE PESAWAT
-+ ---------------------------------------- +
-- Jika gunakan mode pesawat itu guna nya 
-  akan melewati beberapa ID dan merubah IP 
-  kita pada saat proses crack. Cukup gunakan
-  mode pesawat 1-2 detik saja. Jika gunakan 
-  mode pesawat terlalu lama maka akan semakin
-  banyak ID yg terlewatkan. Maka dari itu cukup
-  gunakan 1-2 detik saja.
-  
-{Mr}!{Mt} Jika bug/error pada script harap lapor saya
-""")
-
 # MODULE
 import requests, shutil, os, re, bs4, sys, json, time, platform ,random, datetime, subprocess, logging, base64
 import hmac, hashlib, urllib, stdiomask, urllib.request, uuid
